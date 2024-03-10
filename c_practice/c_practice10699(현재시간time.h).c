@@ -3,7 +3,7 @@
 
 int main()
 {
-    time_t now_time; // time_t Å¸ÀÔ, %lld·Î Ãâ·ÂÇÏ¸é 1970³âµµºÎÅÍ Áö±İ±îÁö Èå¸¥ ½Ã°£ ÃÊ ´ÜÀ§ Á¤¼ö°ªÀ¸·Î Ãâ·ÂÇØÁÜ
+    time_t now_time; // time_t íƒ€ì…, %lldë¡œ ì¶œë ¥í•˜ë©´ 1970ë…„ë„ë¶€í„° ì§€ê¸ˆê¹Œì§€ íë¥¸ ì‹œê°„ ì´ˆ ë‹¨ìœ„ ì •ìˆ˜ê°’ìœ¼ë¡œ ì¶œë ¥í•´ì¤Œ
     struct tm* now_time_info;
 
     now_time = time(NULL);
@@ -21,10 +21,10 @@ struct?tm
     int?tm_min;???//?minutes?after?the?hour?-?[0,?59]????
     int?tm_hour;??//?hours?since?midnight?-?[0,?23]????
     int?tm_mday;??//?day?of?the?month?-?[1,?31]????
-    int?tm_mon;???//?months?since?January?-?[0,?11]?-> 1 ´õÇØÁà¾ß ÀÌ¹ø´ŞÀÌ °ªÀÌ ³ª¿È!!!!!!!
-    int?tm_year;??//?years?since?1900????           -> 1900³â ´õÇØÁà¾ßÇÔ!!!!!!
+    int?tm_mon;???//?months?since?January?-?[0,?11]?-> 1 ë”í•´ì¤˜ì•¼ ì´ë²ˆë‹¬ì´ ê°’ì´ ë‚˜ì˜´!!!!!!!
+    int?tm_year;??//?years?since?1900????           -> 1900ë…„ ë”í•´ì¤˜ì•¼í•¨!!!!!!
     int?tm_wday;??//?days?since?Sunday?-?[0,?6]????
     int?tm_yday;??//?days?since?January?1?-?[0,?365]????
     int?tm_isdst;?//?daylight?savings?time?flag};
-ÃâÃ³: https://blockdmask.tistory.com/417 [°³¹ßÀÚ Áö¸Á»ı:Æ¼½ºÅä¸®]
+ì¶œì²˜: https://blockdmask.tistory.com/417 [ê°œë°œì ì§€ë§ìƒ:í‹°ìŠ¤í† ë¦¬]
 */
