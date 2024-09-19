@@ -10,13 +10,13 @@ int main() {
     string input;
     long long output = 0;
 
-    queue<string> check;
+    queue<int> check;
 
     for(int i= 0; i< k; i++) {
         cin>> input;
         output += cnt[input.size()];
 
-        check.push(input);
+        check.push(input.size());
         cnt[input.size()]++;
     }
 
@@ -26,9 +26,9 @@ int main() {
         cin>> input;
         output += cnt[input.size()];
 
-        check.push(input);
+        check.push(input.size());
         cnt[input.size()]++;
-        cnt[check.front().size()]--;
+        cnt[check.front()]--;
         check.pop();
     }
 
