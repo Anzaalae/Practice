@@ -8,14 +8,11 @@ int main() {
 
     int Max = n;
     int Min = 1;
-    bool stat = true;
     while(n--) {
-        if(stat == true) {
+        if(n % 2 == 1) {
             cout<< Max--<< ' ';
-            stat = false;
         } else {
             cout<< Min++<< ' ';
-            stat = true;
         }
     }   
 }
